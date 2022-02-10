@@ -13,7 +13,11 @@
         inherit system;
       };
       tex = pkgs.texlive.combine {
-        inherit (pkgs.texlive) scheme-minimal latex-bin latexmk;
+        inherit (pkgs.texlive) scheme-small
+          latexmk
+          moderncv
+          /*collection-fontsextra -OR- */ fontawesome5 academicons
+          /*collection-latexextra -OR- */ multirow arydshln changepage;
       };
       cv = pkgs.stdenvNoCC.mkDerivation {
         name = "cv";
@@ -25,6 +29,7 @@
         buildPhase = ''
           mkdir -p .cache/texmf-var
           env TEXMFHOME=.cache TEXMFVAR=.cache/texmf-var \
+              SOURCE_DATE_EPOCH=$(date +%s) \
             latexmk -interaction=nonstopmode -pdf -lualatex \
             cv.tex
         '';
@@ -49,6 +54,9 @@
       };
       defaultApp = self.apps.${system}.cv-inspect;
       devShell = pkgs.mkShell {
+        shellHook = ''
+          SOURCE_DATE_EPOCH=$(date +%s)
+        '';
         buildInputs = cv.buildInputs ++ [
           pkgs.exiftool
         ];

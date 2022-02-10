@@ -1,5 +1,186 @@
-\documentclass[a4paper]{article}
+% document configuration
+% ======================
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% options: casual (default), classic, oldstyle, banking, fancy
+\moderncvstyle{banking}
+% options: blue (default), orange, green, red, purple, grey, black
+\moderncvcolor{black}
+
+\usepackage[scale=0.85]{geometry}
+
+% author information
+% ==================
+\firstname{Moritz}
+\lastname{Lumme}
+
+% optional
+\title{Curriculum Vit\ae{}}
+\address{Dresden, Germany}
+\mobile{(+49) 173 7750455}
+\email{contact@moritz.lumme.de}
+\homepage{moritz.lumme.de}
+%\social[linkedin]{m00wl}
+%\social[twitter]{m00wl}
+%\social[github]{m00wl}
+%\extrainfo{additional information}
+%\photo[70pt][0pt]{img/me.jpg}
+%\quote{"inspirational quote" - inspirational person}
 
 \begin{document}
-  Hello World!
+
+% curriculum vitae
+% ================
+
+\makecvtitle
+
+% education
+\section{Education}
+\cventry
+  {Oct 2018 -- Mar 2023}
+  {Diploma of Computer Science}
+  {Technical University of Dresden}
+  {Dresden, Germany}
+  {}
+  {
+    Specialisation: operating systems, microkernels and virtualization
+  }
+
+\cventry
+  {in July 2018}
+  {Abitur}
+  {Lößnitzgymnasium Radebeul}
+  {Radebeul, Germany}
+  {GPA: 1.1}
+  {
+    Majors: computer science and physics
+  }
+
+% experience
+\section{Experience}
+
+\subsection{Industry}
+\cventry
+  {Jan 2019 -- Sept 2021}
+  {Working Student, Part-time}
+  {KK-Dialog GmbH}
+  {Dresden, Germany}
+  {}
+  {
+    Tasks: software development and sys-admin support
+  }
+
+\subsection{Academia}
+\cventry
+  {Oct 2021 -- Apr 2022}
+  {Research Assistant, Internship}
+  {Technical University of Munich}
+  {Munich, Germany}
+  {}
+  {
+    Chair of Decentralized Systems Engineering
+    \newline
+    Supervisor: Prof. Pramod Bhatotia
+    \newline
+    Project: design and implementation of ABI and communication protocol for a trustworthy system stack for accelerators
+  }
+
+\subsection{Teaching}
+\cventry
+  {Oct 2021 -- Apr 2022}
+  {Student Tutor}
+  {Course: Advanced systems programming in C/Rust}
+  {Munich, Germany}
+  {}
+  {
+    Chair of Decentralized Systems Engineering, Technical University of Munich
+  }
+
+% publications
+%\section{Publications}
+
+% awards
+%\section{Awards}
+%\cventry
+%  {2022}
+%  {Best Tutor}
+%  {}
+%  {}
+%  {}
+%  {
+%    Technical University of Munich
+%  }
+%
+%\cventry
+%  {2018}
+%  {Best High School Thesis}
+%  {}
+%  {}
+%  {}
+%  {
+%    Lößnitzgymnasium Radebeul
+%  }
+
+% skills
+\section{Skills}
+
+\cvitem{OS/system programming}{basic knowledge of C, C++, Rust, kernel development (Linux, L4 Fiasco.OC)}
+\cvitem{Administration}{Linux, mail-/web-server, MySQL}
+\cvline{Misc}{low-level system debugging (qemu, gdb, ptrace), active in the open source community (NixOS)}
+\cvline{Other}{proficient with Adobe Creative Cloud, Microsoft Office}
+
+% communication skills/talks
+%\section{Talks}
+
+% languages
+\section{Languages}
+
+\cvitemwithcomment{German}{Mothertongue}{}
+\cvitemwithcomment{English}{Advanced}{CEFR C1}
+\cvitemwithcomment{French}{Intermediate}{school exchange program in Mar 2014, CEFR B1}
+
+% interests
+\section{Interests}
+
+%% change list symbol
+\renewcommand{\listitemsymbol}{-~}
+
+\cvlistitem{Music: playing the saxophone}
+\cvlistitem{Sports: hiking, rock climbing and bouldering}
+
+\clearpage
+
+%% cover letter
+%% ============
+%
+%\newpage
+%
+%\recipient
+%  {HR Department}
+%  {
+%    Corporation
+%    \newline
+%    Street 123
+%    \newline
+%    12345 City, Country
+%  }
+%\date{\today}
+%\opening{\vspace{5em}\newline Dear Sir or Madam,}
+%\closing{Sincerely yours,}
+%\enclosure[Attached]{Curriculum Vit\ae{}}
+%
+%\title{}
+%
+%\makelettertitle
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus suspendisse faucibus interdum posuere. Varius morbi enim nunc faucibus a pellentesque sit amet. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Felis imperdiet proin fermentum leo vel orci porta non. Est ultricies integer quis auctor elit sed vulputate mi sit. Sapien faucibus et molestie ac feugiat sed lectus vestibulum mattis. Vitae tempus quam pellentesque nec nam. Interdum varius sit amet mattis vulputate enim nulla aliquet. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh.
+%
+%In ante metus dictum at tempor commodo ullamcorper. Vivamus arcu felis bibendum ut tristique. Arcu felis bibendum ut tristique. Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. Odio morbi quis commodo odio. Tortor at auctor urna nunc id. Senectus et netus et malesuada fames ac turpis egestas maecenas. Vitae congue eu consequat ac felis. Purus faucibus ornare suspendisse sed. In iaculis nunc sed augue lacus viverra. Elit sed vulputate mi sit. Enim facilisis gravida neque convallis a cras semper auctor neque. Id eu nisl nunc mi ipsum faucibus vitae. Vitae turpis massa sed elementum tempus egestas sed sed. Neque sodales ut etiam sit amet nisl purus. Molestie nunc non blandit massa enim nec dui nunc. Sed arcu non odio euismod lacinia at quis risus sed. Blandit massa enim nec dui nunc mattis enim ut.
+%
+%Sodales ut eu sem integer vitae justo eget magna. Justo laoreet sit amet cursus sit amet dictum. Pretium viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Tellus id interdum velit laoreet id donec. In eu mi bibendum neque egestas. Arcu cursus vitae congue mauris rhoncus. Accumsan in nisl nisi scelerisque eu ultrices vitae. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Urna molestie at elementum eu. Aenean pharetra magna ac placerat vestibulum lectus mauris. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+%
+%\makeletterclosing
+%
+%\clearpage
+
 \end{document}
